@@ -4,6 +4,7 @@ $font-stack:   'Open Sans', 'Arial', sans-serif;
 $primary-color: #000;
 $secondary-color: #F2C612;//yellow
 $primary-light: #353535; //dark gray
+$primary-lightest: #f4f4f4; //whitesmoke
 $alert-color: #047878;//teal
 body{
     background:#fff;
@@ -19,7 +20,7 @@ html, button, input, select, textarea,
 .l-box {
     padding: 1em;
 }
-.pure-g > div {
+.pure-g > div, .pure-g > nav, .pure-g > ol, .pure-g > ul {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -83,5 +84,27 @@ a.skip-link {
     li:last-child::after{
         content:"";
     }
+}
 
+header.entry-header{
+    text-align: center;
+    background:$primary-lightest;
+    position: relative;
+    @extend .l-box;
+}
+
+header.entry-header::after{
+	position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $primary-lightest;
+    content: " ";
+    bottom:-19px;
+}
+
+footer.site-footer {
+    background:$secondary-color;
+    @extend .l-box;
 }
