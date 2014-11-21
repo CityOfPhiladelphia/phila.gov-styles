@@ -1,0 +1,42 @@
+header.entry-header{
+    text-align: center;
+    background:$primary-lightest;
+    position: relative;
+    @extend .l-box;
+}
+
+header.entry-header::after{
+	position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $primary-lightest;
+    content: " ";
+    bottom:-19px;
+    margin-left:-19px;
+}
+
+footer.site-footer {
+    background:$secondary-color;
+    @extend .l-box;
+}
+
+.site-branding{
+    h1, h2{
+        @extend .accessible;
+    }
+    img {
+        height: 100px;
+        width: auto;
+    }
+}
+
+.department {
+    text-align: center;
+    
+    .pure-button{
+        background-color:$secondary-color;
+    }
+
+}
