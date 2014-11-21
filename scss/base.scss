@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700);
 
-
+//globals 
 $font-stack:   'Open Sans', 'Arial', sans-serif;
 $primary-color: #000;
 $secondary-color: #F2C612;//yellow
@@ -99,3 +99,5 @@ a.skip-link {
 
 //imports at the bottom because sass isn't THAT smart apparently
 @import 'layout';
+@import 'modules';
+@import 'pure';

@@ -1,20 +1,5 @@
-header.entry-header{
-    text-align: center;
-    background:$primary-lightest;
-    position: relative;
-    @extend .l-box;
-}
-
-header.entry-header::after{
-	position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid $primary-lightest;
-    content: " ";
-    bottom:-19px;
-    margin-left:-19px;
+.search-site {
+    text-align:right;
 }
 
 footer.site-footer {
@@ -39,4 +24,32 @@ footer.site-footer {
         background-color:$secondary-color;
     }
 
+}
+
+.search-site button {
+    background:$secondary-color;
+    border: 1px solid $secondary-color;
+}
+
+@media screen and (min-width: 35.5em){//568px & up
+    .container {
+        width:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@media screen and (min-width: 48em){ //768px & up
+    .container {
+       width:700px;
+    }
+}
+@media screen and (min-width: 64em) { //1024px & up
+    .container {
+        width:960px;
+    }
+}
+@media screen and (min-width: 80em) {//1280 & up
+    .container {
+        width:1170px;
+    }
 }

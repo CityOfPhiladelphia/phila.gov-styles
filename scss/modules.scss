@@ -1,0 +1,48 @@
+/* Page/posts h1 tags */
+
+header.entry-header, header.page-header{
+    text-align: center;
+    background:$primary-lightest;
+    position: relative;
+    @extend .l-box;
+}
+
+header.entry-header::after, header.page-header::after{
+	position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $primary-lightest;
+    content: " ";
+    bottom:-19px;
+    margin-left:-19px;
+}
+
+.archive header.entry-header::after {
+    display: none;
+}
+
+.archive header.entry-header {
+    background:none;
+    letter-spacing:normal;
+    padding: 0;
+}
+
+/*submit buttons*/
+
+button {
+    position: relative;
+    left: -4px;
+}
+
+/*external sites*/
+.external-site::after{
+    content: "\f08b";
+    font-family: 'FontAwesome';
+    background: #000;
+    padding: 0.71em 1em;
+    color: #f2c612;
+    position: relative;
+    left: -4px;
+}
