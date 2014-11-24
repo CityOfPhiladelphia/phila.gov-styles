@@ -22,8 +22,15 @@ footer.site-footer {
     
     .pure-button{
         background-color:$secondary-color;
+        border: 1px solid $secondary-color;
     }
 
+}
+.service {
+    .pure-button{
+       float: right;
+        margin:10px;
+    }    
 }
 
 .search-site button {
