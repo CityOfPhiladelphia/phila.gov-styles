@@ -20,11 +20,6 @@ footer.site-footer {
 .department {
     text-align: center;
 }
-.service {
-    .pure-button{
-        @extend .xlarge;
-    }    
-}
 
 .search-site button {
     background:$secondary;
