@@ -3,7 +3,7 @@
 }
 
 footer.site-footer {
-    background:$secondary-color;
+    background:$secondary;
     @extend .l-box;
 }
 
@@ -19,24 +19,17 @@ footer.site-footer {
 
 .department {
     text-align: center;
-    
-    .pure-button{
-        background-color:$secondary-color;
-        border: 1px solid $secondary-color;
-    }
-
 }
 .service {
     .pure-button{
-       float: right;
-        margin:10px;
         @extend .xlarge;
     }    
 }
 
 .search-site button {
-    background:$secondary-color;
-    border: 1px solid $secondary-color;
+    background:$secondary;
+    background:$secondary;
+    border: 1px solid $secondary;
 }
 
 

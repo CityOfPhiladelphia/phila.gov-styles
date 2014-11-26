@@ -2,12 +2,14 @@
 
 //globals 
 $font-stack:   'Open Sans', 'Arial', sans-serif;
-$primary-color: #000;
-$secondary-color: #027fb5;//blue
-$primary-light: #353535; //dark gray
+$primary: #000;
+$secondary: #026a96;//blue
+$primary-light: #333; //dark gray
 $primary-lightest: #d2dadd; //whitesmoke
 $alert-color: #047878;//teal
 $white:#fefefe;//slightly off white
+$borders: #DBE1E3;
+$callouts: #EDF4F7;
 
 body{
     background:#fff;
@@ -17,8 +19,16 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
     font: 100% $font-stack;
-    color: $primary-light;
+    //color: $primary-light;
     letter-spacing: normal;
+}
+a:link, a:visited{
+    color:$secondary;
+    text-decoration: none;
+    font-weight:700;
+}
+a:hover, a:active {
+    color:$primary-light;
 }
 .l-box {
     padding: 1em;
@@ -58,18 +68,26 @@ h5, .h5 {
     font-size:0.750em;
 }
 .alpha-alert{
-    background: $secondary-color;
+    background: $secondary;
     font-size: 80%;
+    color: $white;
+    
     p {
         display:inline;
     }
     a{
         float:right;
     }
-    
+    a:link, a:visited{
+        color:$white;
+    }
+    a:hover, a:active{
+        color:$primary;
+    }
 }
 .site-header {
-    background: $primary-light;
+    background: $primary;
+    color: $white;
 }
 .accessible, .screen-reader-text {	
     position: absolute;

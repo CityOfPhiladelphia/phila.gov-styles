@@ -31,18 +31,35 @@ header.entry-header::after, header.page-header::after{
 
 /*submit buttons*/
 
-button {
+button, .pure-button {
     position: relative;
     left: -4px;
+    
+    background-color:$secondary;
+    border: 1px solid $secondary;
+}
+
+a.pure-button:link, a.pure-button:visited{
+    color:$white;
+}
+a.pure-button:hover, a.pure-button:active{
+    background-color:$primary-light;
+    border:1px solid $primary-light;
 }
 
 /*external sites*/
-.external-site::after{
+.external-site a.pure-button::after{
     content: "\f08b";
     font-family: 'FontAwesome';
-    background: $primary-color;
+    background: $primary;
     padding: 0.71em 1em;
-    color: $secondary-color;
+    color: $secondary;
     position: relative;
-    left: -4px;
+    left: 16px;
+}
+
+.external-site > p{
+    background-color:$callouts;
+    border: 1px solid $borders;
+    padding:3em;
 }
