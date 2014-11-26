@@ -40,9 +40,9 @@ button {
 .external-site::after{
     content: "\f08b";
     font-family: 'FontAwesome';
-    background: #000;
+    background: $primary-color;
     padding: 0.71em 1em;
-    color: #f2c612;
+    color: $secondary-color;
     position: relative;
     left: -4px;
 }

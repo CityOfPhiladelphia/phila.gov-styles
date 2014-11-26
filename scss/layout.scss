@@ -30,12 +30,30 @@ footer.site-footer {
     .pure-button{
        float: right;
         margin:10px;
+        @extend .xlarge;
     }    
 }
 
 .search-site button {
     background:$secondary-color;
     border: 1px solid $secondary-color;
+}
+
+
+.xsmall {
+     font-size: 70%;
+}
+
+.small {
+    font-size: 85%;
+}
+
+.large {
+    font-size: 110%;
+}
+
+.xlarge {
+    font-size: 125%;
 }
 
 @media screen and (min-width: 35.5em){//568px & up
