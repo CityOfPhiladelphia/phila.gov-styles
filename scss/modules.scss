@@ -71,4 +71,42 @@ a.pure-button:hover, a.pure-button:active{
 
 .browse .topic {
     float:left;
+    min-height: 400px;
+    border-right:1px solid $primary;
+    width:31%;
+}
+nav ul{
+    margin: 0 !important;
+    padding:0 !important;
+}
+.browse li {
+    list-style: none;
+    padding:10px;
+    margin-right:10px;
+}
+.browse li h3 {
+    margin:0;
+}
+.browse nav.active{
+    background:#ccc;
+}
+.browse nav, #breadcrumbs {
+    text-transform: capitalize;
+}
+
+#breadcrumbs li:first-child{
+    text-transform: none !important;
+}
+.browse nav span{
+    font-weight: normal;
+}
+
+.browse .current-cat {
+    background:#ccc;
+}
+.main-nav h4{
+    margin: 0;
+}
+#servinfo-list-container {
+    padding:10px;
 }
