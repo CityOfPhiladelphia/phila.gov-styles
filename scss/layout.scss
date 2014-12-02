@@ -6,6 +6,9 @@ footer.site-footer {
     background:$secondary;
     @extend .l-box;
 }
+footer a, footer a:visited {
+    color:$white !important;
+}
 
 .site-branding{
     h1, h2{
