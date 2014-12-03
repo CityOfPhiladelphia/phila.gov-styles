@@ -77,12 +77,30 @@ nav ul{
     padding:0;
     margin:0;
 }
+.browse {
+    li.parent.current-topic{
+        font-size: 120%;
+        margin:0 0 20px 0;
+        padding:0;
+    }
+    li.parent.current-topic h3::before {
+        display: inline;
+    }
+
+}
 .browse li, .departments li {
     list-style: none;
     padding:10px;
     margin-right:10px;
 }
-.browse li h3, .departments li h3 {
+.departments header h1, .browse header h1{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.parent-topics, 
+.browse li h3, 
+.departments li h3 {
     margin:0;
 }
 .browse nav.active, .departments nav.active{
@@ -99,7 +117,7 @@ nav ul{
     font-weight: normal;
 }
 p.child-description, p.parent-description {
-    padding: 0 10px;
+    padding: 0;
     margin: 0;
     font-weight: normal;
 }
@@ -118,5 +136,26 @@ p.child-description, p.parent-description {
     font-size: 90%;
 }
 .current {
-    background:#ccc;
+    background:$primary-lightest;
+}
+
+.topics-nav {
+    background:$primary-lightest;
+    border-top:1px solid $primary-light;
+    margin-right: 10px;
+    
+    h2 {
+        padding-left:10px;
+    }
+
+}
+
+.results {
+    h1 {
+        margin-left:10px;
+    }
+    ul {
+        margin:0;
+        padding:0;
+    }
 }
