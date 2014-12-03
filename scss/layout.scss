@@ -30,7 +30,6 @@ footer a, footer a:visited {
     border: 1px solid $secondary;
 }
 
-
 .xsmall {
      font-size: 70%;
 }
@@ -45,6 +44,10 @@ footer a, footer a:visited {
 
 .xlarge {
     font-size: 125%;
+}
+
+.s-box {
+    padding:1em;
 }
 .browse .topic, .departments .topic {
     clear:both;
@@ -77,7 +80,6 @@ footer a, footer a:visited {
         border-right:1px solid $primary;
         border-bottom: none;
     }
-
 }
 @media screen and (min-width: 80em) {//1280 & up
     .container {
