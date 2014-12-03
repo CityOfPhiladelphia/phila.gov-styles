@@ -46,6 +46,12 @@ footer a, footer a:visited {
 .xlarge {
     font-size: 125%;
 }
+.browse .topic, .departments .topic {
+    clear:both;
+    width:100%;
+    height: auto;
+    border-bottom: 1px solid $primary;
+}
 
 @media screen and (min-width: 35.5em){//568px & up
     .container {
@@ -62,6 +68,13 @@ footer a, footer a:visited {
 @media screen and (min-width: 64em) { //1024px & up
     .container {
         width:960px;
+    }
+    .browse .topic, .departments .topic  {
+        float:left;
+        min-height: 400px;
+        border-right:1px solid $primary;
+        border-bottom: none;
+        width:31%;
     }
 }
 @media screen and (min-width: 80em) {//1280 & up
