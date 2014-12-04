@@ -45,9 +45,17 @@ footer a, footer a:visited {
 .xlarge {
     font-size: 125%;
 }
-
-.s-box {
+.s-box{
     padding:1em;
+}
+.s-box-right {
+    padding:1em 1em 1em 0;
+}
+.s-box-middle{
+    padding:1em 0;
+}
+.s-box-left{
+    padding:1em 0 1em 1em;
 }
 .browse .topic, .departments .topic {
     clear:both;
@@ -55,17 +63,25 @@ footer a, footer a:visited {
     height: auto;
     border-bottom:1px solid $primary;
 }
-
+.hide{
+    display:none;
+}
 @media screen and (min-width: 35.5em){//568px & up
     .container {
         width:auto;
         margin-left:auto;
         margin-right:auto;
     }
+    .hide-sm{
+        display:none;
+    }
 }
 @media screen and (min-width: 48em){ //768px & up
     .container {
        width:700px;
+    }
+    .hide-md{
+        display:none;
     }
 }
 @media screen and (min-width: 64em) { //1024px & up
@@ -80,9 +96,15 @@ footer a, footer a:visited {
         border-right:1px solid $primary;
         border-bottom: none;
     }
+    .hide-lg{
+        display:none;
+    }
 }
 @media screen and (min-width: 80em) {//1280 & up
     .container {
         width:1170px;
+    }
+    .hide-sm{
+        display:none;
     }
 }
