@@ -63,8 +63,18 @@ footer a, footer a:visited {
     height: auto;
     border-bottom:1px solid $primary;
 }
-.hide{
+.hidden-xs{
     display:none;
+}
+.visible-xs{
+    display: block;
+}
+.fa-3x {
+    font-size: 2em;
+}
+
+.alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
+    display:block;
 }
 @media screen and (min-width: 35.5em){//568px & up
     .container {
@@ -72,16 +82,34 @@ footer a, footer a:visited {
         margin-left:auto;
         margin-right:auto;
     }
-    .hide-sm{
+    .hidden-sm{
         display:none;
+    }
+    .visible-sm, .hidden-xs{
+        display: block;
+    }
+    .alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
+        display:inline;
+    }
+    .fa-3x {
+        font-size: 3em;
+    }
+    .home #news {
+        padding:1em 0 1em 2.5em !important;
     }
 }
 @media screen and (min-width: 48em){ //768px & up
     .container {
        width:700px;
     }
-    .hide-md{
+    .hidden-md{
         display:none;
+    }
+    .visible-md, .hidden-xs{
+        display: block;
+    }
+    .fa-3x {
+        font-size: 2em;
     }
 }
 @media screen and (min-width: 64em) { //1024px & up
@@ -96,15 +124,24 @@ footer a, footer a:visited {
         border-right:1px solid $primary;
         border-bottom: none;
     }
-    .hide-lg{
+    .hidden-lg{
         display:none;
+    }
+    .visible-lg, .hidden-xs{
+        display: block;
+    }
+    .fa-3x {
+        font-size: 3em;
     }
 }
 @media screen and (min-width: 80em) {//1280 & up
     .container {
         width:1170px;
     }
-    .hide-sm{
+    .hidden-sm, .hidden-xs{
         display:none;
+    }
+    .visible-xl{
+        display: block;
     }
 }

@@ -1,0 +1,127 @@
+/*
+ *
+ * homepage styles
+ * 
+ * 
+*/
+.home {
+     #welcome h1 {
+        margin-top:0;
+        padding:0;
+        text-transform: none;
+    }
+    .search {
+        background-color:$callouts;
+        border: 1px solid $borders;
+        padding:1.5em;
+        
+        button{
+            display:none;
+        }
+        
+        input[type="search"]{
+            width:100%;
+        }
+    }
+    .search > p {
+        margin: 0 0 1em 0;
+        font-size: 90%;
+    }
+    
+    #popular {
+        text-align:center;
+        
+        .fa-circle{
+            color:$red;
+        }
+        
+        h2 {
+            @extend .h5;
+        }
+    }
+    
+    #services {
+        background:$primary;
+        color:$white;
+        font-size: 90%;
+    
+        h1{
+            color: $secondary-on-primary;
+            border-bottom: 1px solid $primary-light;
+            padding: 0 0 10px 0;
+            margin: 0 0 10px;
+        } 
+        h2{
+            margin:0;
+            padding:0;
+            font-size: 95%;
+        }
+        ul{
+            -moz-column-count: 2;
+            -moz-column-gap: 20px;
+            -webkit-column-count: 2;
+            -webkit-column-gap: 20px;
+            column-count: 2;
+            column-gap: 20px;
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+        a:link, a:visited {
+            color:$white;
+        }
+        a:hover, a:active{
+            color:$secondary-on-primary;
+        }
+        a > span {
+            display: block;
+            margin-bottom: 1.5em;
+            font-weight: normal;
+        }
+
+    }
+    /*
+     *
+     * homepage news styles
+     * 
+     * 
+    */
+    #news {
+        padding: 1em !important;
+        
+        background:$primary-med-light;
+        
+        @include flex-container();
+    
+        > div {
+             @include flex-child();
+        }
+        .story {
+            background: $white;
+        }
+        
+        h3 {
+            border-bottom: 1px solid $primary-lightest;
+            margin: 1em 0 0 0;
+            padding: 0 0 .5em 0;
+        }
+        span {
+            color: $primary-med;
+            font-size: 80%;
+            
+        }
+        p{
+            margin:.5em 0;
+        }
+        img {
+            width:100%;
+            height:auto;
+        }
+        
+        .read-more{
+            float:right;
+        }
+    
+    }
+    
+}

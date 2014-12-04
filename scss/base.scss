@@ -5,6 +5,7 @@
 @import 'layout';
 @import 'modules';
 @import 'pure';
+@import 'home';
 
 body{
     background:#fff;
@@ -61,24 +62,6 @@ h4, .h4{
 }
 h5, .h5 {
     font-size:0.750em;
-}
-.alpha-alert{
-    background: $secondary;
-    font-size: 80%;
-    color: $white;
-    
-    p {
-        display:inline;
-    }
-    a{
-        float:right;
-    }
-    a:link, a:visited{
-        color:$white;
-    }
-    a:hover, a:active{
-        color:$primary;
-    }
 }
 .site-header {
     background: $primary;
