@@ -132,22 +132,52 @@
         }
     }
     #active {
+        .links {
+            position: relative;
+        }
         .links a{
             display: block;
             text-align: left;
             margin-bottom: 10px;
+            position: relative;
+            font-size: .8em;
+            color:$white !important;
+            font-weight: normal;
         }
-        .links a:after{
-            content: "\f08b";
+        .links:after a:visited{
+            color:$white !important;
+        }
+        .link-position{
             font-family: 'FontAwesome';
             background: #000;
-            padding: 0.71em 1em;
-            color: #026a96;
-            position: relative;
-            left: 16px;
+            padding: 0.65em 0.9em;
+            color:$white !important;
+            position: absolute;
+            right: -1px;
+            top: -1px;
+            font-weight: normal;
         }
-         dd{
-            margin:0;
+        .links .departments:after {
+            content: "\f0e8";
+            @extend .link-position;
+        }
+        .links .mayor:after {
+            content: "\f19c";
+            padding: 0.65em .8em;
+            @extend .link-position;
+        }
+        .links .news:after {
+            content: "\f130";
+            padding: 0.65em 1em;
+            @extend .link-position;
+        }
+        .links .maps:after {
+            content: "\f041";
+            padding: 0.65em 1.05em;
+            @extend .link-position;
+        }
+         dt, dd{
+            margin:0 0 20px 0;
         }
         .h3 {
             display: block;
@@ -156,6 +186,17 @@
             font-weight: bold;
             font-size: 90%;
         }
-    } 
-    
+        header h1 {
+            margin-top:0;
+            color:$secondary;
+            padding:0 0 10px 0;
+            border-bottom:1px solid $primary-lightest;
+            font-size: 1.5em;
+        }
+        header h1:after {
+            font-family: 'FontAwesome';
+            content:"\f201";
+            padding:0 0 0 20px;
+        }
+    }    
 }
