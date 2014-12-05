@@ -94,9 +94,6 @@ footer a, footer a:visited {
     .fa-3x {
         font-size: 3em;
     }
-    .home #news {
-        padding:1em 0 1em 2.5em !important;
-    }
 }
 @media screen and (min-width: 48em){ //768px & up
     .container {
@@ -110,6 +107,9 @@ footer a, footer a:visited {
     }
     .fa-3x {
         font-size: 2em;
+    }
+    .home #news {
+        padding:1em 0 1em 2.5em !important;
     }
 }
 @media screen and (min-width: 64em) { //1024px & up

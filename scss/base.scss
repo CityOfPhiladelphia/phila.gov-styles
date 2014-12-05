@@ -97,3 +97,8 @@ a.skip-link {
         content:"";
     }
 }
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

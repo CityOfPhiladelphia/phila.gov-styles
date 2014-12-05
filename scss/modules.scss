@@ -120,10 +120,11 @@ a.pure-button:hover, a.pure-button:active{
     content: "\f08b";
     font-family: 'FontAwesome';
     background: $primary;
-    padding: 0.71em 1em;
+    padding: 0.65em .9em;
     color: $secondary;
     position: relative;
     left: 16px;
+    border-left: 1px solid $primary;
 }
 
 .external-site > .description{
