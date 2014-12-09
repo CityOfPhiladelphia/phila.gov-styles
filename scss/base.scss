@@ -97,6 +97,13 @@ a.skip-link {
         content:"";
     }
 }
+
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
 .group:after {
   content: "";
   display: table;

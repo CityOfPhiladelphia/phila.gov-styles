@@ -1,5 +1,16 @@
 .search-site {
     text-align:right;
+    margin:.7em 0 0 0;
+    
+    button {
+        background:$secondary;
+        background:$secondary;
+        border: 1px solid $secondary;
+        padding: .75em;
+    }
+    .pure-form label {
+        display: inline-block;
+    }
 }
 
 footer.site-footer {
@@ -15,22 +26,12 @@ footer a, footer a:visited {
         @extend .accessible;
     }
     img {
-        height: 100px;
+        height: 75px;
         width: auto;
     }
 }
-
 .department {
     text-align: center;
-}
-.search-site {
-    margin:1.7em 0 0 0;
-}
-.search-site button {
-    background:$secondary;
-    background:$secondary;
-    border: 1px solid $secondary;
-    padding: .75em;
 }
 
 .xsmall {
@@ -52,7 +53,7 @@ footer a, footer a:visited {
     padding:1em;
 }
 .s-box-right {
-    padding:1em 1em 1em 0;
+    padding:2em 2em 2em 0;
 }
 .s-box-middle{
     padding:1em 0;
@@ -85,7 +86,13 @@ footer a, footer a:visited {
 .alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
     display:block;
 }
+.alpha-alert .container {
+    padding:.5em !important;
+}
 @media screen and (min-width: 35.5em){//568px & up
+   .home #active dt, .home #active dd{
+        margin:0 0 20px 0 !important;
+    }       
     .container {
         width:auto;
         margin-left:auto;
