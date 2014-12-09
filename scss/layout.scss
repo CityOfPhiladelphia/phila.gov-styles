@@ -136,6 +136,10 @@ footer a, footer a:visited {
 }
 .alpha-alert .container {
     padding:.5em !important;
+    
+    p {
+        padding: 0 0 0 10px;
+    }
 }
 
 /*
@@ -194,7 +198,7 @@ footer a, footer a:visited {
     .hidden-md{
         display:none;
     }
-    .visible-md, .hidden-xs{
+    .visible-md, .hidden-xs, .hidden-sm{
         display: block;
     }
 }
@@ -203,13 +207,13 @@ footer a, footer a:visited {
     .hidden-lg{
         display:none;
     }
-    .visible-lg, .hidden-xs{
+    .visible-lg, .hidden-x, .hidden-md{
         display: block;
     }
 }
 @media screen and (min-width: 80em) {//1280 & up
     .hidden-sm, .hidden-xs{
-        display:none;
+        display:block;
     }
     .visible-xl{
         display: block;
