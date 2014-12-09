@@ -1,6 +1,11 @@
 .search-site {
-    text-align:right;
-    margin:.7em 0 0 0;
+    text-align:left;
+    margin:0;
+   
+    @media screen and (min-width: 35.5em){
+        text-align:right;
+        margin:.7em 0 0 0;
+    }
     
     button {
         background:$secondary;
@@ -8,9 +13,10 @@
         border: 1px solid $secondary;
         padding: .75em;
     }
-    .pure-form label {
+    .pure-form label, .pure-form input[type="search"] {
         display: inline-block;
     }
+    
 }
 
 footer.site-footer {
@@ -49,11 +55,99 @@ footer a, footer a:visited {
 .xlarge {
     font-size: 125%;
 }
+.browse .topic, .departments .topic {
+    clear:both;
+    width:100%;
+    height: auto;
+    border-bottom:1px solid $primary;
+}
+
+/*
+ *
+ * font-stack utilities 
+ * 
+*/
+.fa-stack-2x {
+    font-size: 1.8em;
+}
+.fa-3x {
+    font-size: 2em;
+}
+@media screen and (min-width: 35.5em){
+    .fa-3x {
+        font-size: 3em;
+    }
+}
+@media screen and (min-width: 48em){ 
+    .fa-3x {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 64em) {
+    .fa-3x {
+        font-size: 3em;
+    }
+}
+
+/*
+ *
+ * container 
+ * 
+*/
+.container {
+    position: relative;
+    @extend .group;
+}
+
+@media screen and (min-width: 35.5em){
+    .container {
+        width:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@media screen and (min-width: 48em){ //768px & up
+    .container {
+       width:700px;
+    }
+}
+@media screen and (min-width: 64em) { //1024px & up
+    .container {
+        width:960px;
+    }
+}
+@media screen and (min-width: 80em) {//1280 & up
+    .container {
+        width:1170px;
+    }
+}
+/*
+ *
+ * ALPHA ALERT 
+ * 
+*/
+.alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
+    display:block;
+}
+@media screen and (min-width: 35.5em){
+     .alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
+        display:inline;
+    }   
+}
+.alpha-alert .container {
+    padding:.5em !important;
+}
+
+/*
+ *
+ * padding boxes 
+ * 
+*/
 .s-box{
     padding:1em;
 }
 .s-box-right {
-    padding:2em 2em 2em 0;
+    padding:0;
 }
 .s-box-middle{
     padding:1em 0;
@@ -61,12 +155,26 @@ footer a, footer a:visited {
 .s-box-left{
     padding:1em 0 1em 1em;
 }
-.browse .topic, .departments .topic {
-    clear:both;
-    width:100%;
-    height: auto;
-    border-bottom:1px solid $primary;
+
+@media screen and (min-width: 35.5em){
+    .s-box{
+        padding:1em;
+    }
+    .s-box-right {
+        padding:2em 2em 2em 0;
+    }
+    .s-box-middle{
+        padding:1em 0;
+    }
+    .s-box-left{
+        padding:1em 0 1em 1em;
+    }  
 }
+/*
+ *
+ * hidden utilities 
+ * 
+*/
 .hidden-xs{
     display:none;
 }
@@ -74,89 +182,32 @@ footer a, footer a:visited {
     display: block;
 }
 
-.fa-stack-2x {
-    font-size: 1.8em;
-}
-.fa-3x {
-    font-size: 2em;
-}
-.container {
-    position: relative;
-}
-.alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
-    display:block;
-}
-.alpha-alert .container {
-    padding:.5em !important;
-}
-@media screen and (min-width: 35.5em){//568px & up
-   .home #active dt, .home #active dd{
-        margin:0 0 20px 0 !important;
-    }       
-    .container {
-        width:auto;
-        margin-left:auto;
-        margin-right:auto;
-    }
+@media screen and (min-width: 35.5em){     
     .hidden-sm{
         display:none;
     }
     .visible-sm, .hidden-xs{
         display: block;
     }
-    .alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
-        display:inline;
-    }
-    .fa-3x {
-        font-size: 3em;
-    }
 }
 @media screen and (min-width: 48em){ //768px & up
-    .container {
-       width:700px;
-    }
     .hidden-md{
         display:none;
     }
     .visible-md, .hidden-xs{
         display: block;
     }
-    .fa-3x {
-        font-size: 2em;
-    }
-    .home #news {
-        padding:1em 0 1em 2.5em !important;
-    }
 }
+
 @media screen and (min-width: 64em) { //1024px & up
-    .container {
-        width:960px;
-    }
-    .browse .topic, .departments .topic  {
-        float:left;
-        min-height: 400px;
-        border-bottom: none;
-        width:31%;
-        border-right:1px solid $primary;
-        border-bottom: none;
-    }
     .hidden-lg{
         display:none;
     }
     .visible-lg, .hidden-xs{
         display: block;
     }
-    .fa-3x {
-        font-size: 3em;
-    }
-    #active .links a{
-        font-size:.7em;
-    }
 }
 @media screen and (min-width: 80em) {//1280 & up
-    .container {
-        width:1170px;
-    }
     .hidden-sm, .hidden-xs{
         display:none;
     }
