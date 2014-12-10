@@ -141,6 +141,10 @@
         .story {
             background: $white;
             @extend .group;
+            
+            @media screen and (min-width: 35.5em){
+                width:100%;
+            }
         }
         
         h3 {
@@ -160,7 +164,18 @@
         img {
             width:100%;
             height:auto;
-        }
+        
+        @media screen and (min-width: 35.5em){
+            max-width:293px;
+            float:left;
+            margin:0 20px 0 0;
+            }
+        
+        @media screen and (min-width: 64em) { 
+            float:none;
+            width:100%;
+            }
+        }//img
         
         .read-more{
             float:right;
@@ -168,6 +183,13 @@
         
         > div {
              @include flex-child();
+            @media screen and (min-width: 35.5em){
+                width:100%;
+            }
+            @media screen and (min-width: 48em){
+                width: 29.1667%;
+            }
+            
         }
     }//#news
     #active {
