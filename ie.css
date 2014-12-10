@@ -1,5 +1,5 @@
 /*---_____------____IE-----______----___---_____*/
 
 .home #news > div{
-    display:block;
+    display:block !important;
 }
