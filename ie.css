@@ -4,3 +4,9 @@
     display:block !important;
     float:right !important;
 }
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
