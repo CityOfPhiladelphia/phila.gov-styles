@@ -1,11 +1,27 @@
+/*
+ *
+ * ALPHA ALERT 
+ * 
+*/
 .alpha-alert{
     background: $secondary;
     font-size: 80%;
     color: $white;
     
-    p {
-        display:inline;
+    .container {
+        padding:.5em !important;
     }
+    span {
+        display: inline-block;
+        margin:0 10px 0 0;
+    }
+    p {
+        display:none;
+        @media screen and (min-width: 35.5em){
+            display: inline;
+        }
+    }
+    
     a{
         float:right;
     }

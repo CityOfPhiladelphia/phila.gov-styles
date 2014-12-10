@@ -121,26 +121,6 @@ footer a, footer a:visited {
         width:1170px;
     }
 }
-/*
- *
- * ALPHA ALERT 
- * 
-*/
-.alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
-    display:block;
-}
-@media screen and (min-width: 35.5em){
-     .alpha-alert .pure-u-1 > p, .alpha-alert .pure-u-1 > span, .alpha-alert .pure-u-1 > a {
-        display:inline;
-    }   
-}
-.alpha-alert .container {
-    padding:.5em !important;
-    
-    p {
-        padding: 0 0 0 10px;
-    }
-}
 
 /*
  *
