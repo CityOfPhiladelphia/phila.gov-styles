@@ -1,5 +1,13 @@
 /*---_____------____IE8-----______----___---_____*/
 
+.alert {
+    background:#F2C612;
+    padding:20px;
+}
 .pure-g{
     letter-spacing: normal !important;
+}
+.container {
+    width:960px !important;
+    margin: 0 auto;
 }
