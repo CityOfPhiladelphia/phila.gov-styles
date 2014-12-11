@@ -7,9 +7,10 @@
     background: $secondary;
     font-size: 80%;
     color: $white;
+    min-height: 30px;
     
     .container {
-        padding:.5em !important;
+        padding:.4em !important;
     }
     span {
         display: inline-block;
@@ -133,16 +134,22 @@ a.pure-button:hover, a.pure-button:active{
  * 
 */
 .external-site a.pure-button::after{
-    content: "\f08b";
-    font-family: 'FontAwesome';
-    background: $primary;
-    padding: 0.65em .9em;
-    color: $secondary;
-    position: relative;
-    left: 16px;
-    border-left: 1px solid $primary;
+    display: none;
 }
-
+    @media screen and (min-width: 35.5em){
+        .external-site a.pure-button::after{
+            content: "\f08b";
+            font-family: 'FontAwesome';
+            background: $primary;
+            padding: 0.65em .9em;
+            color: $secondary;
+            position: relative;
+            left: 16px;
+            border-left: 1px solid $primary;
+            -webkit-font-smoothing: antialiased;
+            display: inline;
+        }
+    }
 .external-site > .description{
     background-color:$callouts;
     border: 1px solid $borders;
@@ -193,7 +200,6 @@ a.pure-button:hover, a.pure-button:active{
     }
     
 }
-
 
 .parent-topics, 
 .browse li h3, 

@@ -1,6 +1,6 @@
 .search-site {
     text-align:left;
-    margin:0;
+    margin: 6px 0 0 0;
    
     @media screen and (min-width: 35.5em){
         text-align:right;
@@ -11,7 +11,7 @@
         background:$secondary;
         background:$secondary;
         border: 1px solid $secondary;
-        padding: .75em;
+        padding: .66em;
     }
     .pure-form label, .pure-form input[type="search"] {
         display: inline-block;
@@ -33,11 +33,12 @@ footer a, footer a:visited {
     }
     img {
         height: 50px;
-        padding: 10px 0;
+        margin-top:13px;
         
         @media screen and (min-width: 35.5em){
             width: auto;
             height: 75px;
+            margin-top:0;
         }
     }
     
@@ -101,13 +102,13 @@ footer a, footer a:visited {
  * 
 */
 .container {
+    width:100%;
     position: relative;
-    @extend .group;
+    @extend .group;   
 }
 
 @media screen and (min-width: 35.5em){
     .container {
-        width:auto;
         margin-left:auto;
         margin-right:auto;
     }
@@ -146,9 +147,13 @@ footer a, footer a:visited {
     padding:1em 0 1em 1em;
 }
 
+.m-box{
+    padding:1.5em;
+}
+
 @media screen and (min-width: 35.5em){
-    .s-box{
-        padding:1em;
+    .m-box{
+        padding:2em;
     }
     .s-box-right {
         padding:2em 2em 2em 0;

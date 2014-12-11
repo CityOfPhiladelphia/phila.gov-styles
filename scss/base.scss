@@ -63,9 +63,13 @@ h4, .h4{
 h5, .h5 {
     font-size:0.750em;
 }
+h6, .h6 {
+    font-size:0.7em;
+}
 .site-header {
     background-color: $primary;
     color: $white;
+    height: 75px;
 }
 #masthead > .container {
     padding:0 1em;
@@ -98,9 +102,28 @@ a.skip-link {
     }
 }
 .entry-content > div {
-    margin:0 20px 0 0;
+    margin:0;
+}
+@media screen and (min-width: 35.5em){
+    .entry-content > div {
+        margin:0 20px 0 0;
+    }
+}
+//for footer stickiness
+.entry-header + .container {
+    margin-top:20px;
 }
 
+#content {
+  margin-bottom: 20px; 
+}
+#content:after {
+  content: "";
+  display: block;
+}
+footer, #content:after {
+  height: 20px; 
+}
 
 .float-left {
     float:left;
@@ -108,7 +131,7 @@ a.skip-link {
 .float-right {
     float:right;
 }
-.group:after {
+.group::after {
   content: "";
   display: table;
   clear: both;

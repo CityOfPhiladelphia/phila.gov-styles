@@ -67,8 +67,9 @@
             color:$primary-light !important;
         }
         h2 {
-            @extend .h5;
+            @extend .h6;
             margin:0;
+            color:$primary-light;
         }
     }
     
@@ -211,7 +212,7 @@
             font-weight: normal;
         }
 
-        .links:after a:visited{
+        .links::after a::visited{
             color:$white !important;
         }
         .link-position{
@@ -224,22 +225,23 @@
             top: -1px;
             font-weight: normal;
             font-size: 1.321em;
+            -webkit-font-smoothing: antialiased;
         }
-        .links .departments:after {
+        .links .departments::after {
             content: "\f0e8";
             @extend .link-position;
         }
-        .links .mayor:after {
+        .links .mayor::after {
             content: "\f19c";
             padding: 0.65em .8em;
             @extend .link-position;
         }
-        .links .news:after {
+        .links .news::after {
             content: "\f130";
             padding: 0.65em 1em;
             @extend .link-position;
         }
-        .links .maps:after {
+        .links .maps::after {
             content: "\f041";
             padding: 0.65em 1.05em;
             @extend .link-position;
@@ -286,11 +288,12 @@
             border-bottom:1px solid $primary-lightest;
             font-size: 1.5em;
         }
-        header h1:after {
+        header h1::after {
             font-family: 'FontAwesome';
             color:$secondary;
             content:"\f201";
             padding:0 0 0 20px;
+            -webkit-font-smoothing: antialiased;
         }
     }//#active
 }
