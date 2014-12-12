@@ -1,3 +1,12 @@
+#page{
+    min-height: 100%;
+}
+
+#content {
+    height: 100%;
+    margin-bottom: 1em;
+}
+
 .search-site {
     text-align:left;
     margin: 6px 0 0 0;
@@ -21,7 +30,8 @@
 
 footer.site-footer {
     background:$secondary;
-    @extend .l-box;
+    width:100%;
+    @extend .s-box-middle;
 }
 footer a, footer a:visited {
     color:$white !important;
@@ -156,7 +166,7 @@ footer a, footer a:visited {
         padding:2em;
     }
     .s-box-right {
-        padding:2em 2em 2em 0;
+        padding:1em 2em 2em 0;
     }
     .s-box-middle{
         padding:1em 0;

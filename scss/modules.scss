@@ -175,6 +175,12 @@ a.pure-button:hover, a.pure-button:active{
     margin:0;
 }
 .browse {
+    
+    .parent.current-topic a:hover{
+        cursor: default;
+        color:$primary;
+    }
+    
     li.parent.current-topic{
         font-size: 140%;
         margin:0 0 20px 0;
@@ -216,6 +222,16 @@ a.pure-button:hover, a.pure-button:active{
 #breadcrumbs li:first-child{
     text-transform: none !important;
 }
+
+
+#breadcrumbs {
+    font-size:85%;
+    
+    @media screen and (min-width: 35.5em){
+        font-size:100%;
+    }
+}
+
 .browse nav span, .departments nav span{
     font-weight: normal;
 }
