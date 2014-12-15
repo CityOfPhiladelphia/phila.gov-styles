@@ -12,6 +12,12 @@
         background:$secondary;
         border: 1px solid $secondary;
         padding: .66em;
+        display: none;
+        
+        @media screen and (min-width: 35.5em){
+            display: inline-block;
+        }
+        
     }
     .pure-form label, .pure-form input[type="search"] {
         display: inline-block;
@@ -41,9 +47,9 @@ footer a, footer a:visited {
             height: 75px;
             margin-top:0;
         }
-    }
+    }//img
     
-}
+}//.site-branding
 .department {
     text-align: center;
 }
