@@ -184,28 +184,46 @@ footer a, footer a:visited {
     display: block;
 }
 
-@media screen and (min-width: 35.5em){     
-    .hidden-sm, .visible-xs{
+@media screen and (min-width: 35.5em){    //small
+    .hidden-sm{
+         display:none !important;
+    }
+    .visible-xs{
         display:none;
     }
     .visible-sm, .hidden-xs{
         display: block;
     }
 }
-@media screen and (min-width: 48em){ //768px & up
-    .hidden-md, .visible-xs{
+@media screen and (min-width: 48em){ //med
+    .hidden-md{
+         display:none !important;
+    }
+    .visible-xs, 
+    .visible-sm{
         display:none;
     }
-    .visible-md, .hidden-xs, .hidden-sm{
+    .visible-md{
+        display: block !important;
+    }
+    .hidden-xs, 
+    .hidden-sm{
         display: block;
     }
 }
 
 @media screen and (min-width: 64em) { //1024px & up
-    .hidden-lg, .visible-xs{
+    .hidden-lg{
+        display: none !important;
+    }
+    
+    .visible-xs{
         display:none;
     }
-    .visible-lg, .hidden-x, .hidden-md{
+    .visible-lg{
+        display: block !important;
+    }
+    .hidden-xs, .hidden-md{
         display: block;
     }
 }
@@ -219,4 +237,15 @@ footer a, footer a:visited {
     .visible-xl{
         display: block;
     }
+}
+
+//sidebar margin 
+
+.container > #secondary {
+    
+    @media screen and (min-width: 48em){  
+        width:24%;
+        margin: 0 0 0 1%;
+    }
+
 }
