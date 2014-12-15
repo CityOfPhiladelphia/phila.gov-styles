@@ -77,32 +77,28 @@ h6, .h6 {
 }
 
 .home .site-header {
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 40% 20px / 35% auto $primary;
+        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 40% 20px / 35% auto $white;
     
     @media screen and (min-width: 360px){
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 35% 20px / 35% auto $primary;
+        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 35% 20px / 35% auto $white;
 
     }
     @media screen and (min-width: 400px){
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 30% 10px / 35% auto $primary;
+        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 30% 10px / 35% auto $white;
 
     }
     @media screen and (min-width: 500px){
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 25% 5px / 35% auto $primary;
+        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 25% 5px / 35% auto $white;
 
     }
     @media screen and (min-width: 35.5em){
-        background:$primary;
-    }
-    
-    @media screen and (min-width: 35.5em){
-    
+        background:$white;
     }
 }
 .site-header {
     color: $white;
     height: 75px;
-    background: $primary;
+    background: $white;
 }
 #masthead > .container {
     padding:0 1em;

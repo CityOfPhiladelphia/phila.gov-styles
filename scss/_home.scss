@@ -9,16 +9,24 @@
         margin-top:0;
         padding:0;
         text-transform: none;
-        font-size: 1.3em;
+        font-size: 1.5em;
+        font-weight: 400;
         
          @media screen and (min-width: 35.5em){
-            font-size:2em;
+            font-size:1.5em;
          }
          
     }
+    .home-top{
+        background:$callouts;
+        border-top:1px solid $borders;
+        border-bottom:1px solid $borders;
+        padding-top:10px;
+        margin-bottom: 0;
+    }
     .search {
         @extend .group;
-        background-color:$callouts;
+        background-color:#F9F9F9;
         border: 1px solid $borders;
         padding:1.5em;
         margin-bottom: 1em;
@@ -46,9 +54,10 @@
             }
         }
     }
-    .search > p {
+    .search p {
         margin: 0 0 1em 0;
-        font-size: 90%;
+        padding:0;
+        font-size: 100%;
     }
     
     #popular {
@@ -62,7 +71,7 @@
         }
         
         a:link .fa-circle, a:visited .fa-circle{
-            color:$red;
+            color:$yellow;
         }
         
         a:hover .fa-circle, a:active .fa-circle {
@@ -72,11 +81,13 @@
             @extend .h6;
             margin:0;
             color:$primary-light;
+            font-size:.9em !important;
+            font-weight: 400 !important;
         }
     }
     
     #services {
-        background:$primary;
+        background:$secondary;
         color:$white;
         font-size: 90%;
     
@@ -122,14 +133,15 @@
      * 
      * 
     */
+    .home-news {
+        background:#F9F9F9;
+    }
     #news {
         padding: 1em;
         
         @media screen and (min-width: 48em){
             padding:1em 0 1em 2.5em !important;
         }
-        
-        background:$primary-med-light;
         
         @include flex-container();
         
@@ -145,6 +157,7 @@
         .story {
             background: $white;
             @extend .group;
+            border: 1px solid $borders;
             
             @media screen and (min-width: 35.5em){
                 width:100%;
@@ -304,4 +317,8 @@
             -webkit-font-smoothing: antialiased;
         }
     }//#active
+    .fa h6{
+        margin:0;
+        padding:0;
+    }
 }
