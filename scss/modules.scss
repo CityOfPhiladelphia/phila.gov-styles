@@ -292,6 +292,7 @@ p.child-description, p.parent-description {
 
 .related{
     background:$primary-lightest;
+    border: 1px solid $borders;
     
     h3 {
         margin: 0 0 10px 0;
@@ -312,7 +313,8 @@ p.child-description, p.parent-description {
     li:last-child{
         margin-bottom: 0;
     }
-    
-    
 }
 
+.search-results {
+    font-size:90%;
+}

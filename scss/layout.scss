@@ -29,6 +29,10 @@ footer.site-footer {
     background:$secondary;
     width:100%;
     @extend .s-box-middle;
+    
+    .site-info{
+        padding-left:10px;
+    }
 }
 footer a, footer a:visited {
     color:$white !important;
@@ -244,7 +248,7 @@ footer a, footer a:visited {
 .container > #secondary {
     
     @media screen and (min-width: 48em){  
-        width:24%;
+        width:23%;
         margin: 0 0 0 1%;
     }
 

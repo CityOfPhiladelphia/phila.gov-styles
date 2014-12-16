@@ -77,6 +77,14 @@
                  top: -10px;
              }
             
+            @media screen and (min-width: 48em){
+                 top: -5px;
+             }
+            
+            @media screen and (min-width: 64em){
+                 top: -7px;
+             }
+            
         }
         
         a:link .fa-circle, a:visited .fa-circle{
@@ -234,6 +242,7 @@
     #active {
         .active-list{
             background:$primary-lightest;
+            border: 1px solid $borders;
         }
         .h3 {
              @media screen and (min-width: 48em){
