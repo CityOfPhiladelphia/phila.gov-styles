@@ -9,10 +9,10 @@
         margin-top:0;
         padding:0;
         text-transform: none;
-        font-size: 1.5em;
+        font-size: 1.33em;
         font-weight: 400;
         
-         @media screen and (min-width: 35.5em){
+         @media screen and (min-width: 64em){
             font-size:1.5em;
          }
          
@@ -29,7 +29,11 @@
         background-color:#F9F9F9;
         border: 1px solid $borders;
         padding:1.5em;
-        margin-bottom: 1em;
+        margin-bottom: 0;
+        
+        @media screen and (min-width: 35.5em){
+             margin-bottom: 1em;
+        }
         
         button{
             display:none;
@@ -66,8 +70,13 @@
         .fa-wrench:before, .fa-credit-card:before, .fa-home:before, .fa-briefcase:before {
             font-size: .7em;
             position: relative;
-            top: -10px;
+            top: -7px;
             left: 0px;
+            
+            @media screen and (min-width: 35.5em){
+                 top: -10px;
+             }
+            
         }
         
         a:link .fa-circle, a:visited .fa-circle{
@@ -78,11 +87,14 @@
             color:$primary-light !important;
         }
         h2 {
-            @extend .h6;
             margin:0;
             color:$primary-light;
-            font-size:.9em !important;
-            font-weight: 400 !important;
+            font-size:.7em;
+            font-weight: 400;
+            
+            @media screen and (min-width: 35.5em){
+                font-size:.9em;
+              }
         }
     }
     
@@ -117,7 +129,7 @@
             color:$white;
         }
         a:hover, a:active{
-            color:$secondary-on-primary;
+            color:$primary;
         }
         a > span {
             display: block;
@@ -158,9 +170,11 @@
             background: $white;
             @extend .group;
             border: 1px solid $borders;
+            margin-bottom: 20px;
             
-            @media screen and (min-width: 35.5em){
+            @media screen and (min-width: 48em){
                 width:100%;
+                margin-bottom:0;
             }
         }
         
@@ -168,7 +182,9 @@
             border-bottom: 1px solid $primary-lightest;
             margin: 1em 0 0 0;
             padding: 0 0 .5em 0;
+            word-break: break-word;
         }
+    
         a:link > h3, a:visited > h3 {
             color:$primary;
         }
@@ -218,6 +234,11 @@
     #active {
         .active-list{
             background:$primary-lightest;
+        }
+        .h3 {
+             @media screen and (min-width: 48em){
+                font-size:95%;
+            }   
         }
         .links {
             position: relative;
@@ -269,11 +290,11 @@
         }
         .links span {
             position: relative;
-            right: 14px;
+            right: 21px;
             top: 5px;
             display: inline-block;
         }
-         dt{
+        dt{
             margin:0 0 0 0;
             border-bottom: none;
         }
@@ -283,11 +304,12 @@
             border-bottom: none;
         }
         
-        @media screen and (min-width: 35.5em){
+        @media screen and (min-width: 48em){
             dt, dd {
                 margin:0 0 10px 0;
                 padding:0 0 10px 0;
                 border-bottom: 1px solid $primary-med-light;
+                min-height: 62px;
             }
             dt:last-of-type, dd:last-of-type{
                 margin:0;
@@ -318,7 +340,7 @@
         }
     }//#active
     .fa h6{
-        margin:0;
+        margin:-3px 0 0 0;
         padding:0;
     }
 }
