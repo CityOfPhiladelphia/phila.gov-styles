@@ -4,14 +4,13 @@
  * 
 */
 .alpha-alert{
-    background: $gray;
+    background: #B70000;
     font-size: 80%;
     color: $white;
     min-height: 30px;
     
     .container {
         padding:.4em !important;
-        background: darkorange;
     }
     span {
         display: inline-block;
@@ -171,12 +170,34 @@ a.pure-button:hover, a.pure-button:active{
  * 
 */
 
-.topic ul {
-    padding:0;
-    margin:0;
+.topic {
+    li.current-topic.current {
+        background:#fff;
+        border-left:10px solid $primary;
+    }
+    ul {
+        padding:0;
+        margin:0;
+    }
+  li.current-topic + ul.subtopics {
+        background:$primary-lightest;
+        padding: 10px 0;
+    }
 }
 .browse {
     
+    .topics-nav{
+        float:left;
+        
+        ul {
+            padding: 10px 0 !important;
+        }
+    }
+    
+    .subtopic-select ul.subtopics{
+        background:none !important;
+    }
+
     .parent.current-topic a:hover{
         cursor: default;
         color:$primary;
@@ -232,16 +253,7 @@ a.pure-button:hover, a.pure-button:active{
 .browse nav span, .departments nav span{
     font-weight: normal;
 }
-@media screen and (min-width: 64em) { //1024px & up
-    .browse .topic, .departments .topic  {
-        float:left;
-        min-height: 400px;
-        border-bottom: none;
-        width:31%;
-        border-right:1px solid $primary;
-        border-bottom: none;
-    }
-}
+
 p.child-description, p.parent-description {
     padding: 0;
     margin: 0;
@@ -254,25 +266,23 @@ p.child-description, p.parent-description {
 .main-nav h4{
     margin: 0;
 }
-#servinfo-list-container {
-    padding:10px;
-}
 .detail {
     display: block;
-    font-size: 90%;
+    font-size: 80%;
 }
 .current {
     background:$primary-lightest;
 }
 
 .topics-nav {
-    background:$primary-lightest;
-    border-top:1px solid $primary-light;
     margin-right: 0;
-    margin-top: 40px;
-
-    @media screen and (min-width: 35.5em){
-        margin-right: 10px;
+    ul {
+        background:$primary-lightest;
+        margin:0 10px 0 0 !important;
+    }
+    li.current-topic {
+        background:#fff;
+        border-left:10px solid $primary;
     }
 
     h2 {
@@ -282,8 +292,11 @@ p.child-description, p.parent-description {
 }
 
 .results {
-    h1 {
-        margin-left:10px;
+    #servinfo-list-container{
+        margin: 0 10px;
+    }
+    h2 {
+        margin:0 0 10px 0;
     }
     ul {
         margin:0;

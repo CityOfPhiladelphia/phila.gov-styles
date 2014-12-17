@@ -28,11 +28,18 @@
 footer.site-footer {
     background:$secondary;
     width:100%;
-    @extend .s-box-middle;
     
-    .site-info{
-        padding-left:10px;
+    li{
+        display: inline-block;
+        padding:0 0 0 10px;
     }
+    nav ol {
+        float:right;
+    }
+    nav ul {
+        display: block !important;
+    }
+    
 }
 footer a, footer a:visited {
     color:$white !important;
@@ -73,7 +80,7 @@ footer a, footer a:visited {
 .xlarge {
     font-size: 125%;
 }
-.browse .topic, .departments .topic {
+.departments .topic {
     clear:both;
     width:100%;
     height: auto;
