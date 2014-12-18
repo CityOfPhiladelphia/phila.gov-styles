@@ -28,6 +28,8 @@
 footer.site-footer {
     background:$secondary;
     width:100%;
+    font-size: 90%;
+    text-transform: uppercase;
     
     li{
         display: inline-block;
@@ -39,10 +41,12 @@ footer.site-footer {
     nav ul {
         display: block !important;
     }
-    
-}
-footer a, footer a:visited {
-    color:$white !important;
+    a:link, a:visited {
+        color:$white;
+    }  
+    a:hover, a:active{
+        color:$primary;
+    } 
 }
 
 .site-branding{

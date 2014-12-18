@@ -145,10 +145,6 @@ a.skip-link {
         margin:0 20px 0 0;
     }
 }
-//for footer stickiness
-.entry-header + .container {
-    margin-top:20px;
-}
 
 .float-left {
     float:left;
@@ -160,4 +156,22 @@ a.skip-link {
   content: "";
   display: table;
   clear: both;
+}
+//sticky footer
+body,html {
+    height: 100%;
+}
+#page {
+    min-height: 100%;
+    margin-bottom: -40px;
+    position: relative;
+}
+#page:after{
+    content: "";
+    display: block;
+    height: 40px;
+}
+footer {
+    height:40px;
+    font-size: 80%;
 }
