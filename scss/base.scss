@@ -42,8 +42,11 @@ a:hover, a:active {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 1em .5em;
     //using extend here, so as not to add another class to ever grid-u
-    @extend .top-bottom-pad;
+    @media screen and (min-width: 35.5em){
+        padding: 1em 0;
+    }
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -61,6 +64,9 @@ h1, .h1 {
 h1.entry-title{
     text-align: left;
     font-size:1.6em;
+}
+.department h1.entry-title{
+    text-align: center;
 }
 
 h2, .h2 {
@@ -202,4 +208,8 @@ footer {
         }
     }
    
+}
+
+.not-found button {
+    display: none;
 }

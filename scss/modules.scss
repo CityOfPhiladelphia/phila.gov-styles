@@ -167,6 +167,10 @@ a.pure-button:hover, a.pure-button:active{
     }
 }
 .browse {
+    .results {
+        margin: 40px 0 0 0;
+        padding-left:40px;
+    }
     .topics-nav{
         float:left;
         
@@ -180,7 +184,6 @@ a.pure-button:hover, a.pure-button:active{
     }
 
     .parent.current-topic a:hover{
-        cursor: default;
         color:$primary;
     }
     
@@ -275,6 +278,10 @@ p.child-description, p.parent-description {
         background:#fff;
         border-left:10px solid $primary;
     }
+    
+    a li:hover {
+        border-left:10px solid $primary;
+    }
 
     h2 {
         padding-left:10px;
@@ -283,8 +290,6 @@ p.child-description, p.parent-description {
 }
 
 .results {
-    margin: 40px 0 0 0;
-    padding-left:40px;
     
     #servinfo-list-container{
         margin: 0 10px;
