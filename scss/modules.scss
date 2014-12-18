@@ -328,7 +328,41 @@ p.child-description, p.parent-description {
         margin-bottom: 0;
     }
 }
+/*
+ *
+ * search results page
+ * 
+ * 
+*/
 
-.search-results {
-    font-size:90%;
+.search {
+    .search-site {
+        margin: 5px 0 0 0;
+    }
+    .search-head {
+        background:$primary-med-light;
+    }
+    header{
+        text-align: left;
+        h1 {
+            text-transform: none;
+        }
+    }
+    label {
+        width:89%;
+    }
+    input[type="search"] {
+        width:100%;
+    }
+    .search-results {
+        h1 {
+            text-transform: uppercase;
+            @extend .h3;
+        }
+        p {
+            line-height: 1.5em;
+            font-size: 90%;
+        }
+    }
 }
+

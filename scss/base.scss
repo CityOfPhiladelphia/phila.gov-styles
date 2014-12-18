@@ -76,6 +76,12 @@ h6, .h6 {
     font-size:0.7em;
 }
 
+hr {
+    height:1px;
+    border: none;
+    background: $primary-lightest;
+}
+
 .home .site-header {
         background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 40% 20px / 35% auto $white;
     
