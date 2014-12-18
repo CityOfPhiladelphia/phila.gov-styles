@@ -46,33 +46,11 @@
 */
 
 header.entry-header, header.page-header{
-    text-align: center;
     background:$primary-lightest;
     position: relative;
     @extend .l-box;
 }
 
-header.entry-header::after, header.page-header::after{
-	position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid $primary-lightest;
-    content: " ";
-    bottom:-19px;
-    margin-left:-19px;
-}
-
-.archive header.entry-header::after {
-    display: none;
-}
-
-.archive header.entry-header {
-    background:none;
-    letter-spacing:normal;
-    padding: 0;
-}
 
 /*
  *
@@ -258,7 +236,6 @@ a.pure-button:hover, a.pure-button:active{
     text-transform: none !important;
 }
 
-
 #breadcrumbs {
     font-size:.8em;
 }
@@ -271,6 +248,7 @@ p.child-description, p.parent-description {
     padding: 0;
     margin: 0;
     font-weight: normal;
+    text-transform: none;
 }
 .parent-description a {
     padding: 0;

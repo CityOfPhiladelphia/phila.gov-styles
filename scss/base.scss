@@ -29,6 +29,9 @@ a:hover, a:active {
 .l-box {
     padding: 1em .5em;
 }
+.top-bottom-pad {
+    padding: 1em 0;
+}
 .pure-g > div, 
 .pure-g > nav, 
 .pure-g > ol, 
@@ -40,7 +43,7 @@ a:hover, a:active {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     //using extend here, so as not to add another class to ever grid-u
-    @extend .l-box;
+    @extend .top-bottom-pad;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -54,6 +57,10 @@ h1, .h1 {
     @media screen and (min-width: 35.5em){
         font-size: 1.750em;
     }
+}
+h1.entry-title{
+    text-align: left;
+    font-size:1.6em;
 }
 
 h2, .h2 {
@@ -137,6 +144,10 @@ a.skip-link {
         content:"";
     }
 }
+.entry-title.container {
+    padding: 0 .5em;
+}
+
 .entry-content > div {
     margin:0;
 }
@@ -169,8 +180,26 @@ body,html {
 #page:after{
     content: "";
     display: block;
-    height: 40px;
+    height: 60px;
+    @media screen and (min-width: 35.5em){ 
+        height:40px;
+    }
 }
 footer {
-    height:40px;
+    height:60px;
+    padding:0 10px;
+    
+    .float-right{
+        float:none;
+    }
+   
+    @media screen and (min-width: 35.5em){ 
+        height:40px;
+        padding:0;
+    
+        .float-right{
+            float:right;
+        }
+    }
+   
 }
