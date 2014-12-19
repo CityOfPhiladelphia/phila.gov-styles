@@ -215,8 +215,13 @@ a.pure-button:hover, a.pure-button:active{
 }
 .browse {
     .results {
-        margin: 40px 0 0 0;
-        padding-left:40px;
+        margin: 0;
+        padding-left:0;
+        
+        @media screen and (min-width: 35.5em){
+            margin: 40px 0 0 0;
+            padding-left:40px;
+        }
     }
     .topics-nav{
         float:left;
@@ -386,7 +391,11 @@ p.child-description, p.parent-description {
 */
 .search-form{
     label {
-        width:89%;
+        width:82%;
+        
+         @media screen and (min-width: 48em){
+            width:87%;
+         }
     }
     input[type="search"] {
         width:100%;

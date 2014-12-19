@@ -43,8 +43,7 @@ a:hover, a:active {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 1em .5em;
-    //using extend here, so as not to add another class to ever grid-u
-    @media screen and (min-width: 35.5em){
+    @media screen and (min-width: 80em){
         padding: 1em 0;
     }
 }
@@ -63,7 +62,10 @@ h1, .h1 {
 }
 h1.entry-title{
     text-align: left;
-    font-size:1.6em;
+    font-size:1.4em;
+    @media screen and (min-width: 35.5em){
+            font-size:1.6em;
+    }
 }
 
 h2, .h2 {
@@ -118,7 +120,10 @@ hr {
     background: $white;
 }
 #masthead > .container {
-    padding:0 1em;
+    padding:0 .5em;
+    @media screen and (min-width: 35.5em){
+        padding:0;
+    }
 }
 .accessible, .screen-reader-text {	
     position: absolute;
@@ -148,7 +153,6 @@ a.skip-link {
     }
 }
 .entry-title.container {
-    padding: 0 .5em;
     margin: 0 auto;
 }
 
@@ -191,7 +195,6 @@ body,html {
 }
 footer {
     height:60px;
-    padding:0 10px;
     
     .float-right{
         float:none;
