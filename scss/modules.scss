@@ -16,7 +16,16 @@
         font-size: 80%;
     }
     .float-right{
-        width:230px;
+        width:100%;
+        margin-top:20px;
+        @media screen and (min-width: 35.5em){
+            width:230px;
+            margin-top:0;
+        }
+    }
+    
+    .button-with-icon {
+        max-width:100%;
     }
     h1{
         color:$yellow;
@@ -37,6 +46,7 @@
     
    p a{
         font-weight:bold;
+        text-decoration: underline;
     }
     a:last-child{
         margin:0;
@@ -89,7 +99,6 @@
 */
 
 header.entry-header, header.page-header{
-    background:$primary-lightest;
     position: relative;
     @extend .l-box;
 }
@@ -175,14 +184,9 @@ a.pure-button:hover, a.pure-button:active{
             display: inline;
         }
     }
-.external-site > .description{
-    background-color:$callouts;
-    border: 1px solid $borders;
-    padding:3em;
-}
 
 .external-site > p {
-    margin:2em 0 1em 0;
+    margin:1em 0 1em 0;
 }
 .external-site > a{
     margin:1em 0 2em 0;
@@ -278,6 +282,10 @@ a.pure-button:hover, a.pure-button:active{
     text-transform: capitalize;
 }
 
+#breadcrumbs > .container > nav {
+    border-top:10px solid $secondary;
+    padding-top:10px;
+}
 #breadcrumbs li:first-child{
     text-transform: none !important;
 }
@@ -376,6 +384,14 @@ p.child-description, p.parent-description {
  * 
  * 
 */
+.search-form{
+    label {
+        width:89%;
+    }
+    input[type="search"] {
+        width:100%;
+    }
+}//search-form
 
 .search {
     .search-site {

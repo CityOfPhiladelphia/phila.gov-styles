@@ -65,9 +65,6 @@ h1.entry-title{
     text-align: left;
     font-size:1.6em;
 }
-.department h1.entry-title{
-    text-align: center;
-}
 
 h2, .h2 {
     font-size: 1.20em;
@@ -152,6 +149,7 @@ a.skip-link {
 }
 .entry-title.container {
     padding: 0 .5em;
+    margin: 0 auto;
 }
 
 .entry-content > div {
