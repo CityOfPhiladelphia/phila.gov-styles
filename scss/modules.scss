@@ -124,7 +124,7 @@ nav ul{
 
 button {
     position: relative;
-    left: -4px;
+    left: -6px;
     top:-1px;
     @extend .pure-button;
 }
@@ -486,7 +486,9 @@ p.child-description, p.parent-description {
 
 
 .error-404{
-    padding-left:20px;
+        @media screen and (min-width: 35.5em){
+            padding-left:20px;
+        }
 
     .search {
         @extend .group;
