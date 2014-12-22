@@ -46,7 +46,10 @@ footer.site-footer {
     }  
     a:hover, a:active{
         color:$primary;
-    } 
+    }
+    .pure-u-1-3 {
+        width:32.3333% !important;
+    }
 }
 
 .site-branding{
