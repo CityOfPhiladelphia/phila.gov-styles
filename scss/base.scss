@@ -194,6 +194,14 @@ body,html {
     }
 }
 footer {
+    text-align: center;
+    font-size: 90%;
+    @media screen and (min-width: 35.5em){
+        text-align: inherit;
+        font-size: 100%;
+    }
+    
+    
     height:60px;
     
     .float-right{
