@@ -6,6 +6,7 @@
 @import 'modules';
 @import 'pure';
 @import 'home';
+@import 'swifttype';
 
 body{
     background:#fff;
@@ -200,8 +201,6 @@ footer {
         text-align: inherit;
         font-size: 100%;
     }
-    
-    
     height:80px;
     
     .float-right{
@@ -218,7 +217,9 @@ footer {
     }
    
 }
-
+header + .container {
+    padding:0 0 1em 0;
+}
 .not-found button {
     display: none;
 }
