@@ -1,17 +1,17 @@
 /*
  *
- * ALPHA ALERT 
- * 
+ * ALPHA ALERT
+ *
 */
 .alpha-alert{
     background:$primary-light;
     color: $white;
     min-height: 30px;
-    
+
     .pure-button, .pure-button:hover{
         border:1px solid $white;
     }
-    
+
     .float-left{
         font-size: 80%;
     }
@@ -23,7 +23,7 @@
             margin-top:0;
         }
     }
-    
+
     .button-with-icon {
         max-width:100%;
     }
@@ -31,7 +31,7 @@
         color:$yellow;
         margin: 5px 0;
     }
-    
+
     .container {
         padding:.4em !important;
     }
@@ -43,7 +43,7 @@
         display:block;
         margin:0;
     }
-    
+
    p a{
         font-weight:bold;
     }
@@ -59,7 +59,7 @@
     .button-with-icon{
         margin: 0 0 5px;
         border:none;
-        
+
         a:link, a:visited{
             background:$white;
             color:$primary;
@@ -93,8 +93,8 @@
 /*
  *
  * pages & posts h1s
- * 
- * 
+ *
+ *
 */
 
 header.entry-header, header.page-header{
@@ -106,8 +106,8 @@ header.entry-header, header.page-header{
 /*
  *
  * nav
- * 
- * 
+ *
+ *
 */
 
 nav ul{
@@ -118,8 +118,8 @@ nav ul{
 /*
  *
  * submit buttons
- * 
- * 
+ *
+ *
 */
 
 button {
@@ -148,8 +148,8 @@ a.pure-button:hover, a.pure-button:active{
 /*
  *
  * search forms
- * 
- * 
+ *
+ *
 */
 
 .pure-form input[type="search"] {
@@ -163,8 +163,8 @@ a.pure-button:hover, a.pure-button:active{
 /*
  *
  * external site pages
- * 
- * 
+ *
+ *
 */
 .external-site a.pure-button::after{
     display: none;
@@ -194,8 +194,8 @@ a.pure-button:hover, a.pure-button:active{
 /*
  *
  * service/information/department finder
- * 
- * 
+ *
+ *
 */
 
 .topic {
@@ -222,7 +222,7 @@ a.pure-button:hover, a.pure-button:active{
     .results {
         margin: 0;
         padding-left:0;
-        
+
         @media screen and (min-width: 80em){
             margin: 40px 0 0 0;
             padding-left:40px;
@@ -236,12 +236,12 @@ a.pure-button:hover, a.pure-button:active{
     }
     .topics-nav{
         float:left;
-        
+
         ul {
             padding: 10px 0 !important;
         }
     }
-    
+
     .subtopic-select ul.subtopics{
         background:none !important;
     }
@@ -249,7 +249,7 @@ a.pure-button:hover, a.pure-button:active{
     .parent.current-topic a:hover{
         color:$primary;
     }
-    
+
     li.parent.current-topic{
         font-size: 125%;
         margin:0;
@@ -259,7 +259,7 @@ a.pure-button:hover, a.pure-button:active{
             display: inline;
         }
     }//li.parent.current-topic
-    
+
     li.parent.current-topic h3::before {
         display: inline;
     }
@@ -279,15 +279,15 @@ a.pure-button:hover, a.pure-button:active{
     margin:0 !important;
     padding:0 !important;
     font-size:1.3em;
-    
+
     @media screen and (min-width: 35.5em){
         font-size: 1.75em;
     }
-    
+
 }
 
-.parent-topics, 
-.browse li h3, 
+.parent-topics,
+.browse li h3,
 .departments li h3 {
     margin:0;
 }
@@ -345,7 +345,7 @@ p.child-description, p.parent-description {
         background:#fff;
         border-left:10px solid $primary;
     }
-    
+
     a li:hover {
         border-left:10px solid $primary;
     }
@@ -357,7 +357,7 @@ p.child-description, p.parent-description {
 }
 
 .results {
-    
+
     #servinfo-list-container{
         margin: 0 10px;
     }
@@ -373,7 +373,7 @@ p.child-description, p.parent-description {
 .related{
     background:$primary-lightest;
     border: 1px solid $borders;
-    
+
     h3 {
         margin: 0 0 10px 0;
     }
@@ -382,7 +382,7 @@ p.child-description, p.parent-description {
         margin:0;
         padding:0;
     }
-    
+
     a:link, a:visited {
         font-weight: 400;
     }
@@ -397,13 +397,13 @@ p.child-description, p.parent-description {
 /*
  *
  * search results page
- * 
- * 
+ *
+ *
 */
 .search-form{
     label {
         width:82%;
-        
+
          @media screen and (min-width: 48em){
             width:87%;
          }
@@ -451,7 +451,7 @@ p.child-description, p.parent-description {
 .button-with-icon{
     position: relative;
     max-width:300px;
-    
+
     span {
         position: relative;
         right: 21px;
@@ -516,4 +516,15 @@ p.child-description, p.parent-description {
     @media screen and (min-width: 35.5em){
          margin-bottom: 1em;
     }
-} 
+}
+
+#site-wide-alert {
+  background:$yellow;
+  font-size:90%;
+
+  h2 {
+    margin:0;
+    padding:0;
+
+  }
+}
