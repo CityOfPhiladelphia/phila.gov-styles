@@ -520,11 +520,20 @@ p.child-description, p.parent-description {
 
 #site-wide-alert {
   background:$yellow;
-  font-size:90%;
+  font-size:80%;
+  vertical-align:middle !important;
+  .container {
+    padding:.5em 0;
+
+  }
+
 
   h2 {
     margin:0;
     padding:0;
 
+  }
+  i{
+    padding:0 10px 0 0;
   }
 }
