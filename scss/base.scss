@@ -1,103 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700);
 
 @import 'variables';
-@import 'mixins';
 @import 'layout';
 @import 'modules';
-@import 'pure';
 @import 'home';
 @import 'swifttype';
 
-body{
-    background:#fff;
-}
-
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
-    font: 100% $font-stack;
-    //color: $primary-light;
-    letter-spacing: normal;
-}
-a:link, a:visited{
-    color:$secondary;
-    text-decoration: none;
-    font-weight:700;
-}
-a:hover, a:active {
-    color:$primary-light;
-}
 .l-box {
     padding: 1em .5em;
 }
 .top-bottom-pad {
     padding: 1em 0;
 }
-.pure-g > div, 
-.pure-g > nav, 
-.pure-g > ol, 
-.pure-g > ul, 
-.pure-g > aside, 
-.pure-g > footer, 
-.pure-g > header{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 1em .5em;
-    @media screen and (min-width: 80em){
-        padding: 1em 0;
-    }
-}
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    text-transform: uppercase;
-}
-h1, .h1 {
-    font-size: 1.40em;
-    
-    @media screen and (min-width: 35.5em){
-        font-size: 1.750em;
-    }
-}
-h1.entry-title{
-    text-align: left;
-    font-size:1.4em;
-    @media screen and (min-width: 35.5em){
-            font-size:1.6em;
-    }
-}
-
-h2, .h2 {
-    font-size: 1.20em;
-    
-    @media screen and (min-width: 35.5em){
-        font-size: 1.250em;
-    }
-}
-h3, .h3 {
-    font-size: 1em;
-}
-h4, .h4{
-    font-size: 0.875em;
-}
-h5, .h5 {
-    font-size:0.750em;
-}
-h6, .h6 {
-    font-size:0.7em;
-}
-
-hr {
-    height:1px;
-    border: none;
-    background: $primary-lightest;
-}
 
 .home .site-header {
         background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 40% 20px / 35% auto $white;
-    
+
     @media screen and (min-width: 360px){
         background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 35% 20px / 35% auto $white;
 
@@ -120,13 +39,7 @@ hr {
     background: $white;
     background: $white;
 }
-#masthead > .container {
-    padding:0 .5em;
-    @media screen and (min-width: 35.5em){
-        padding:0;
-    }
-}
-.accessible, .screen-reader-text {	
+.accessible, .screen-reader-text {
     position: absolute;
 	left: -99999px;
 	height: 10px;
@@ -134,7 +47,7 @@ hr {
 }
 
 a.skip-link {
-    @extend .accessible;
+  //  @extend .accessible;
 }
 
 #breadcrumbs {
@@ -153,13 +66,6 @@ a.skip-link {
         content:"";
     }
 }
-.entry-title.container {
-    margin: 0 auto;
-}
-
-.entry-content > div {
-    margin:0;
-}
 @media screen and (min-width: 35.5em){
     .entry-content > div {
         margin:0 20px 0 0;
@@ -176,49 +82,6 @@ a.skip-link {
   content: "";
   display: table;
   clear: both;
-}
-//sticky footer
-body,html {
-    height: 100%;
-}
-#page {
-    min-height: 100%;
-    margin-bottom: -40px;
-    position: relative;
-}
-#page:after{
-    content: "";
-    display: block;
-    height: 60px;
-    @media screen and (min-width: 35.5em){ 
-        height:40px;
-    }
-}
-footer {
-    text-align: center;
-    font-size: 90%;
-    @media screen and (min-width: 35.5em){
-        text-align: inherit;
-        font-size: 100%;
-    }
-    height:80px;
-    
-    .float-right{
-        float:none;
-    }
-   
-    @media screen and (min-width: 35.5em){ 
-        height:40px;
-        padding:0;
-    
-        .float-right{
-            float:right;
-        }
-    }
-   
-}
-header + .container {
-    padding:0 0 1em 0;
 }
 .not-found button {
     display: none;
