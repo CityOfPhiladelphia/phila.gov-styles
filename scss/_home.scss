@@ -23,7 +23,7 @@
       padding-top:10px;
       margin-bottom: 0;
   }
-  .search {
+  .home-search {
       @extend .group;
       background-color:#F9F9F9;
       border: 1px solid $borders;
@@ -34,13 +34,8 @@
            margin-bottom: 1em;
       }
 
-      button{
-          display:none;
-      }
-
-      input[type="search"]{
-          width:100%;
-
+      .search:before {
+        display:none;
       }
       .search-help{
           display:none;
@@ -56,54 +51,13 @@
               display: block;
           }
       }
-  }
-  .search p {
-      margin: 0 0 1em 0;
-      padding:0;
-      font-size: 100%;
-  }
-
-  #popular {
-      text-align:center;
-
-      .fa-wrench:before, .fa-credit-card:before, .fa-home:before, .fa-briefcase:before {
-          font-size: .7em;
-          position: relative;
-          top: -7px;
-          left: 0px;
-
-          @media screen and (min-width: 35.5em){
-               top: -10px;
-           }
-
-          @media screen and (min-width: 48em){
-               top: -5px;
-           }
-
-          @media screen and (min-width: 64em){
-               top: -7px;
-           }
-
+      p {
+          margin: 0 0 1em 0;
+          padding:0;
+          font-size: 100%;
       }
+  }//.home-search
 
-      a:link .fa-circle, a:visited .fa-circle{
-          color:$yellow;
-      }
-
-      a:hover .fa-circle, a:active .fa-circle {
-          color:$primary-light !important;
-      }
-      h2 {
-          margin:0;
-          color:$primary-light;
-          font-size:.7em;
-          font-weight: 400;
-
-          @media screen and (min-width: 35.5em){
-              font-size:.9em;
-            }
-      }
-  }
 
   #services {
       background:$secondary;
@@ -246,60 +200,7 @@
               font-size:95%;
           }
       }
-      .links {
-          position: relative;
-      }
-      .links a{
-          display: block;
-          height:25px;
-          text-align: center;
-          margin-bottom: 10px;
-          position: relative;
-          font-size: .8em;
-          color:$white !important;
-          font-weight: normal;
-      }
 
-      .links::after a::visited{
-          color:$white !important;
-      }
-      .link-position{
-          font-family: 'FontAwesome';
-          background: #000;
-          padding: 0.65em 0.9em;
-          color:$white !important;
-          position: absolute;
-          right: -1px;
-          top: -1px;
-          font-weight: normal;
-          font-size: 1.321em;
-          -webkit-font-smoothing: antialiased;
-      }
-      .links .departments::after {
-          content: "\f0e8";
-          @extend .link-position;
-      }
-      .links .mayor::after {
-          content: "\f19c";
-          padding: 0.65em .8em;
-          @extend .link-position;
-      }
-      .links .news::after {
-          content: "\f130";
-          padding: 0.65em 1em;
-          @extend .link-position;
-      }
-      .links .maps::after {
-          content: "\f041";
-          padding: 0.65em 1.05em;
-          @extend .link-position;
-      }
-      .links span {
-          position: relative;
-          right: 21px;
-          top: 5px;
-          display: inline-block;
-      }
       dt{
           margin:0 0 0 0;
           border-bottom: none;
@@ -345,8 +246,4 @@
           -webkit-font-smoothing: antialiased;
       }
   }//#active
-  .fa h6{
-      margin:-3px 0 0 0;
-      padding:0;
-  }
 }
