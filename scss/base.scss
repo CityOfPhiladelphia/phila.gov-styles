@@ -6,20 +6,10 @@
 @import 'home';
 @import 'swifttype';
 
-.l-box {
-    padding: 1em .5em;
-}
-.top-bottom-pad {
-    padding: 1em 0;
-}
 .site-header {
     color: $white;
     height: 75px;
     background: $white;
-}
-
-a.skip-link {
-  //  @extend .accessible;
 }
 
 #breadcrumbs {
