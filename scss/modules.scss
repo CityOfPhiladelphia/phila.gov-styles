@@ -4,13 +4,13 @@
  *
 */
 .alpha-alert{
-    background:$primary-light;
+    background:$mine-shaft;
     color: $white;
     min-height: 30px;
     padding: 0.4em 0;
 
     h1{
-      color:$yellow;
+      color:$bell-yellow;
       margin: 5px 0;
     }
     p {
@@ -26,7 +26,7 @@
         color:$white;
     }
     a:hover, a:active{
-        color:$yellow;
+        color:$bell-yellow;
     }
     .button {
       height:30px;
@@ -39,10 +39,10 @@
       }
       a:link, a:visited{
         background:$white;
-        color:$primary;
+        color:$mine-shaft;
       }
       a:active, a:hover{
-        color:$secondary;
+        color:$ben-franklin-blue;
       }
     }
   .fa {
@@ -68,30 +68,30 @@
   }
   li.current-topic.current {
       background:#fff;
-      border-left:10px solid $primary;
+      border-left:10px solid $ben-franklin-blue;
   }
   ul {
       padding:0;
       margin:0;
   }
   li.current-topic + ul.subtopics {
-      background:$primary-lightest;
+      background:$ghost-gray;
       padding: 10px 0;
   }
 }
 .browse {
   margin-bottom:16px;
-  
+
     .results {
 
       a:link, a:visited{
         h2 {
-          color:$secondary;
+          color:$ben-franklin-blue;
         }
       }
       a:hover, a:active{
         h2{
-          color:$primary-light;
+          color:$mine-shaft;
         }
       }
         margin: 0;
@@ -109,7 +109,7 @@
         }
     }//results
     .subtopics a li:hover {
-        border-left:10px solid $primary;
+        border-left:10px solid $ben-franklin-blue;
     }
     .topics-nav{
         float:left;
@@ -124,7 +124,7 @@
     }
 
     .parent.current-topic a:hover{
-        color:$primary;
+        color:$ben-franklin-blue;
     }
 
     li.parent.current-topic{
@@ -187,22 +187,22 @@ p.child-description, p.parent-description {
     font-size: 80%;
 }
 .current {
-    background:$primary-lightest;
+    background:$mine-shaft;
 }
 
 .topics-nav {
     margin-right: 0;
     ul {
-        background:$primary-lightest;
+        background:$ghost-gray;
         margin:0 10px 0 0 !important;
     }
     li.current-topic {
         background:#fff;
-        border-left:10px solid $primary;
+        border-left:10px solid $ben-franklin-blue;
     }
 
     a li:hover {
-        border-left:10px solid $primary;
+        border-left:10px solid $ben-franklin-blue;
     }
 
     h2 {
@@ -226,7 +226,7 @@ p.child-description, p.parent-description {
     .find {
         @extend .group;
         background-color:#F9F9F9;
-        border: 1px solid $borders;
+        border: 1px solid $geyser;
         padding:1.5em;
         margin-bottom: 0;
 

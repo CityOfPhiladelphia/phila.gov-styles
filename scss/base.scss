@@ -12,38 +12,10 @@
 .top-bottom-pad {
     padding: 1em 0;
 }
-
-
-.home .site-header {
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 40% 20px / 35% auto $white;
-
-    @media screen and (min-width: 360px){
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 35% 20px / 35% auto $white;
-
-    }
-    @media screen and (min-width: 400px){
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 30% 10px / 35% auto $white;
-
-    }
-    @media screen and (min-width: 500px){
-        background:url("../img/city-of-philadelphia-home-mobile@2x.png") no-repeat scroll 25% 5px / 35% auto $white;
-
-    }
-    @media screen and (min-width: 35.5em){
-        background:$white;
-    }
-}
 .site-header {
     color: $white;
     height: 75px;
     background: $white;
-    background: $white;
-}
-.accessible, .screen-reader-text {
-    position: absolute;
-	left: -99999px;
-	height: 10px;
-	width: 10px;
 }
 
 a.skip-link {

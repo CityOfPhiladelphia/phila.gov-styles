@@ -17,16 +17,16 @@
        }
   }
   .home-top{
-      background:$callouts;
-      border-top:1px solid $borders;
-      border-bottom:1px solid $borders;
-      padding-top:10px;
+      background:$ghost-gray;
+      border-top:1px solid $geyser;
+      border-bottom:1px solid $geyser;
+      padding:20px 0;
       margin-bottom: 0;
   }
   .home-search {
       @extend .group;
       background-color:#F9F9F9;
-      border: 1px solid $borders;
+      border: 1px solid $geyser;
       padding:1.5em;
       margin-bottom: 0;
 
@@ -44,7 +44,7 @@
           .search-help{
               font-size: 80%;
               color:$white;
-              background:$secondary;
+              background:$ben-franklin-blue;
               padding:5px;
               text-align: right;
               float: right;
@@ -60,13 +60,17 @@
 
 
   #services {
-      background:$secondary;
+      background:$ben-franklin-blue;
+      padding:1.5em 2em;
       color:$white;
-      font-size: 90%;
+
+      li {
+        font-size:90%;
+      }
 
       h1{
-          color: $secondary-on-primary;
-          border-bottom: 1px solid $primary-light;
+          color: $ben-franklin-blue;
+          border-bottom: 1px solid $mine-shaft;
           padding: 0 0 10px 0;
           margin: 0 0 20px;
       }
@@ -87,10 +91,16 @@
           list-style:none;
       }
       a:link, a:visited {
+        h2{
+          color:$white;
+        }
           color:$white;
       }
       a:hover, a:active{
-          color:$primary;
+          color:$ben-franklin-blue;
+        h2{
+          color:$ben-franklin-blue;
+        }
       }
       a > span {
           display: block;
@@ -111,25 +121,19 @@
   }
   #news {
       padding: 1em;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: stretch;
+      flex-align: stretch;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
-      @media screen and (min-width: 48em){
-          padding:1em 0 1em 2.5em !important;
-      }
-
-
-      .pure-u-1-24 {
-          width: 0;
-      }
-
-      @media screen and (min-width: 48em){
-          .pure-u-1-24 {
-              width: 4.1667%;
-          }
-      }
       .story {
           background: $white;
           @extend .group;
-          border: 1px solid $borders;
+          border: 1px solid $geyser;
           margin-bottom: 20px;
 
           @media screen and (min-width: 48em){
@@ -139,20 +143,20 @@
       }
 
       h3 {
-          border-bottom: 1px solid $primary-lightest;
+          border-bottom: 1px solid $mine-shaft;
           margin: 1em 0 0 0;
           padding: 0 0 .5em 0;
           word-break: break-word;
       }
 
       a:link > h3, a:visited > h3 {
-          color:$primary;
+          color:$ben-franklin-blue;
       }
       a:hover > h3, a:active > h3{
-          color:$secondary;
+          color:$ben-franklin-blue;
       }
       span {
-          color: $primary-med;
+          color: $manatee;
           font-size: 80%;
 
       }
@@ -181,19 +185,15 @@
       }
 
       > div {
-          @media screen and (min-width: 35.5em){
-              width:100%;
-          }
-          @media screen and (min-width: 48em){
-              width: 29.1667%;
-          }
+        display: -webkit-flex;
+        display: flex;
 
       }
   }//#news
   #active {
       .active-list{
-          background:$primary-lightest;
-          border: 1px solid $borders;
+          background:$mine-shaft;
+          border: 1px solid $geyser;
       }
       .h3 {
            @media screen and (min-width: 48em){
@@ -209,14 +209,16 @@
           margin:0 0 20px 0;
           font-size: .9em;
           border-bottom: none;
+
       }
 
       @media screen and (min-width: 48em){
           dt, dd {
               margin:0 0 10px 0;
               padding:0 0 10px 0;
-              border-bottom: 1px solid $primary-med-light;
+              border-bottom: 1px solid $manatee;
               min-height: 62px;
+              font-size: 95%;
           }
           dt:last-of-type, dd:last-of-type{
               margin:0;
@@ -235,15 +237,19 @@
       header h1 {
           margin-top:0;
           padding:0 0 10px 0;
-          border-bottom:1px solid $primary-lightest;
+          border-bottom:1px solid $mine-shaft;
           font-size: 1.5em;
       }
       header h1::after {
           font-family: 'FontAwesome';
-          color:$secondary;
+          color:$ben-franklin-blue;
           content:"\f201";
           padding:0 0 0 20px;
           -webkit-font-smoothing: antialiased;
+      }
+      .related .row {
+        margin-left:0;
+        margin-right:0;
       }
   }//#active
 }
